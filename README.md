@@ -1,4 +1,4 @@
-# TransferTool
+# qubic.li TransferTool
 The qubic.li TransferTool is an early stage tool to test transfers/transaction in the qubic network. You may use this tool to propagate transactions into the qubic network via the qubic.li API.
 
 We do not guarentee a successfull delivery of transactions to the network. The use of this tool is without any warranty.
