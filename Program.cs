@@ -61,7 +61,7 @@ namespace li.qubic.transfertool
             }
 
             int targetTick = 0;
-            if (string.IsNullOrEmpty(tick) || !int.TryParse(amount, out targetTick))
+            if (string.IsNullOrEmpty(tick) || !int.TryParse(tick, out targetTick))
             {
                 // try getting current Tick from API
                 var apiResponse = apiHelper.GetFromApi<CurrentTickResponse>("public/currentTick").GetAwaiter().GetResult();
