@@ -7,11 +7,14 @@ Usage:
 
 ```
 transfertool.exe <SOURCESEED> <DESTINATIONID> <AMOUNT> [TICK]
-```
 
 <SOURCESEED> Your Seed from which you would like to send Energy/quos (55 lower case letters)
 <DESTINATIONID> The Destination ID to which you want to send the Energy (60 upper case letters)
 <AMOUNT> The Amount of Energy/quos to send
 [TICK] OPTIONAL The tick to execute this transaction. If left empty it take current Tick + 10
 
-The tool is right now not doing any check if the entered values are correct.
+you can also just start the tool. it will prompt you to enter the needed parameters.
+
+```
+
+The tool is right now not doing any check if the entered values are correct. We do not send your seed over the network. it is kept savely on your computer.
