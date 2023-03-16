@@ -7,7 +7,7 @@ namespace li.qubic.transfertool
         static void Main(string[] args)
         {
             Console.WriteLine("qubic.li Simple Transfer Tool");
-            Console.WriteLine("Syntax: transfertool.exe <SOURCESEED> <DESTINATIONID> <AMOUNT> [TICK]");
+            Console.WriteLine("Usage: transfertool.exe <SOURCESEED> <DESTINATIONID> <AMOUNT> [TICK]");
             Console.WriteLine("Example: transfertool.exe sdlkjljklskjdflksjdflksjfdsjdfsdf LKDJFLKJDFLKJDSFJKLJKDFKJ 100");
             Console.WriteLine("If Tick is not defined it will use current tick + 10 as target tick for transaction");
 
@@ -53,8 +53,8 @@ namespace li.qubic.transfertool
                 return;
             }
 
-            int energyTosend = 0;
-            if (string.IsNullOrEmpty(amount) || !int.TryParse(amount, out energyTosend))
+            long energyTosend = 0;
+            if (string.IsNullOrEmpty(amount) || !long.TryParse(amount, out energyTosend))
             {
                 Console.WriteLine("Invalid Amount");
                 return;
